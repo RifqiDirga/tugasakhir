@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(153, 14, 141, 0.2);
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
