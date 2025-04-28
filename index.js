@@ -7,9 +7,12 @@ const cookieParser = require("cookie-parser")
 const session = require("express-session")
 const flash = require("connect-flash")
 
-// Import Routes
-const authRoutes = require("./routes/auth.js")
+// Import verifyToken
+const verifyToken = require("./middleware/auth.js")
 
+// Import Routes
+const authRoutes = require("./routes/auth.js")              
+// const composeRoutes = require("./routes/compose.js")
 // configuration
 const app = express()
 dotenv.config()
@@ -29,7 +32,7 @@ app.use(flash())
 // MongoDB Setup
 const connectDatabase = async () => {
     try {
-        const conn = await mongoose.connect('mongodb+srv://'+ process.env.DB_USERNAME +':'+ process.env.DB_PASSWORD +'@cluster0.wfjguv9.mongodb.net/',
+        const conn = await mongoose.connect('mongodb+srv://'+ process.env.DB_USERNAME +':'+ process.env.DB_PASSWORD +'@cluster0.wfjguv9.mongodb.net/tugasakhirDB',
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true
@@ -49,14 +52,20 @@ connectDatabase().then(() => {
     })
 })
 
+
 // User page
 app.get("/", (req, res) => {
-    res.render("home")
+    res.render("user")
 })
 
 // Admin page
-app.get("/admin", (req, res) => {
+app.get("/admin", verifyToken, (req, res) => {
     res.render("admin")
 })
 
 app.use("/auth", authRoutes)
+// app.use("/compose", composeRoutes)
+app.get("/logout", (req, res) => {
+    res.cookie("jwt", "", { masAge: 1 })
+    res.redirect("/auth/login")
+})

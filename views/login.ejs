@@ -17,15 +17,16 @@
 <body>
     
         
-        <form action="/login" method="POST">
+        <form action="/auth/login" method="POST">
             <h1>login</h1>
             <div class="form-group">
-              <label for="exampleInputUsername">Username</label>
-              <input type="email" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter Username">
+              <label for="username">Username</label>
+              <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
