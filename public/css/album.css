@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+
+
+/* Navigation Bar */
+
+.navbar{
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu',sans-serif;
+    font-size:2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size:1.2rem;
+    
+}
+
+/* Title  */
+.berwarna{
+    background-color: #ff0a5c;
+   
+}
+
+#title{
+    color:#fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 5%;
+}
+
+#title .container-fluid{
+    
+}
+
+
+.title-text{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.container_parent {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 4%;
+    gap: 2%;
+    height: 100vh;
+}
+
+.album1 {
+        background-color: #F9A8A8;
+
+}
+
+.album2 {
+        background-color: #A6F4A6;
+
+}
+
+.album3 {
+        background-color: #FFF66E;
+
+}
+
+.left_album {
+    width: 20%;
+}
+
+.left_album img {
+    width: 100%;
+}
+
+
+
+.right_album {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+
+
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 5%;
+    padding: 2% 0;
+}

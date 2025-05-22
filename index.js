@@ -63,10 +63,17 @@ app.get("/bio", (req, res) => {
     res.render("bio")
 })
 
+// User page
+app.get("/album", (req, res) => {
+    res.render("album")
+})
+
 // Admin page
 app.get("/admin", verifyToken, (req, res) => {
     res.render("admin")
 })
+
+
 
 app.use("/auth", authRoutes)
 // app.use("/compose", composeRoutes)
