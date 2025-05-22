@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+#title {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.berwarna{
+    background-color: #ff0a5c;
+   
+}
+
+.container-fluid{
+}
+
+/* Navigation Bar */
+
+.navbar{
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu',sans-serif;
+    font-size:2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size:1.2rem;
+    
+}
+
+/* Title  */
+#title{
+    color:#fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 5%;
+}
+
+#title .container-fluid{
+    
+}
+
+
+.title-text{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Mid */
+
+.left_parent {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 0 4%;
+    width: 70%;
+}
+
+.bio_description h1 {
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.container_right_parent {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+.right_parent {
+    outline: 3px solid red;
+}
+
+.container_parent {
+    display: flex;
+    flex-direction: row;
+        padding: 2% 5%;
+}
+
+.foto {
+    padding: 4px 0;
+    text-align: center;
+}
+
+.bio_foto img {
+    width: 80%;
+}
+
+.container_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_text h1 {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.parent_desc_latarblkg {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 2%;
+
+}
+
+
+
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 5%;
+    padding: 2% 0;
+}

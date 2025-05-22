@@ -47,7 +47,7 @@ const connectDatabase = async () => {
 
 const PORT = process.env.PORT
 connectDatabase().then(() => {
-    app.listen(PORT, function() {
+    app.listen(PORT, '0.0.0.0', function() {
         console.log("Server berjalan di port "+PORT);
     })
 })
@@ -56,6 +56,11 @@ connectDatabase().then(() => {
 // User page
 app.get("/", (req, res) => {
     res.render("user")
+})
+
+// User page
+app.get("/bio", (req, res) => {
+    res.render("bio")
 })
 
 // Admin page
