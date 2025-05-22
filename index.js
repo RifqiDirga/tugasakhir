@@ -73,6 +73,8 @@ app.get("/admin", verifyToken, (req, res) => {
     res.render("admin")
 })
 
+
+
 app.use("/auth", authRoutes)
 // app.use("/compose", composeRoutes)
 app.get("/logout", (req, res) => {
