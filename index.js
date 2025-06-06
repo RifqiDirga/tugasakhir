@@ -73,6 +73,11 @@ app.get("/admin", verifyToken, (req, res) => {
     res.render("admin")
 })
 
+// Gallery Add page
+app.get("/admin/add-gallery", verifyToken, (req, res) => {
+    res.render("add-gallery")
+})
+
 
 
 app.use("/auth", authRoutes)
