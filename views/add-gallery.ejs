@@ -32,7 +32,7 @@
     ></script>
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="/css/add-gallery.css" />
   </head>
 
   <body>
@@ -47,19 +47,24 @@
 
     <section class="parents_container">
 
-      <div class="top_container">
-        <h1>Pengaturan</h1>
-      </div>
-
         <div class="down_container">
-          <div class="album">
-            <i class="fa-solid fa-gear"></i>
-            <h1>Album</h1>
-          </div>
           <div class="galeri">
             <i class="fa-solid fa-gear"></i>
             <h1>Galeri</h1>
           </div>
+
+          <form id="galleryForm" enctype="multipart/form-data" method="POST" action="/upload">
+      <div class="mb-3">
+        <input class="form-control" type="file" name="foto" id="foto" required />
+      </div>
+      <div class="d-flex justify-content-center">
+       <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill d-flex flex-row align-items-center gap-2">
+            <i class="fa-solid fa-square-check"></i>
+            <span>Save</span>
+        </button>
+</div>
+
+    </form>
         </div>
       </section>
 

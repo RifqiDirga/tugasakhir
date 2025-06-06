@@ -15,6 +15,7 @@ ul {
 /* Navigation Bar */
 
 .navbar{
+
 }
 
 .navbar-brand{
@@ -30,13 +31,11 @@ ul {
 .nav-link{
     font-family: 'Montserrat-Light', sans-serif;
     font-size:1.2rem;
-    
 }
 
 /* Title  */
 .berwarna{
     background-color: #ff0a5c;
-   
 }
 
 #title{
@@ -48,7 +47,6 @@ ul {
 }
 
 #title .container-fluid{
-    
 }
 
 
@@ -67,18 +65,15 @@ ul {
 }
 
 .album1 {
-        background-color: #F9A8A8;
-
+    background-color: #F9A8A8;
 }
 
 .album2 {
-        background-color: #A6F4A6;
-
+    background-color: #A6F4A6;
 }
 
 .album3 {
-        background-color: #FFF66E;
-
+    background-color: #FFF66E;
 }
 
 .left_album {
@@ -88,8 +83,6 @@ ul {
 .left_album img {
     width: 100%;
 }
-
-
 
 .right_album {
     width: 80%;
