@@ -73,6 +73,11 @@ app.get("/admin", verifyToken, (req, res) => {
     res.render("admin")
 })
 
+// Admin page
+app.get("/admin/album", verifyToken, (req, res) => {
+    res.render("admin_album")
+})
+
 
 
 app.use("/auth", authRoutes)
