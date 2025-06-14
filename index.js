@@ -73,17 +73,30 @@ app.get("/admin", verifyToken, (req, res) => {
     res.render("admin")
 })
 
-// Admin page
+// Album page
 app.get("/admin/album", verifyToken, (req, res) => {
     res.render("admin_album")
-
 })
+
+// Gallery Add page
+app.get("/admin/add-album", verifyToken, (req, res) => {
+    res.render("add-album")
+})
+
+// Gallery Add page
+app.get("/admin/add-album-2", verifyToken, (req, res) => {
+    res.render("add-album-2")
+})
+
+// Gallery page
+app.get("/admin/gallery", verifyToken, (req, res) => {
+    res.render("admin_gallery")
+})
+
 // Gallery Add page
 app.get("/admin/add-gallery", verifyToken, (req, res) => {
     res.render("add-gallery")
 })
-
-
 
 app.use("/auth", authRoutes)
 // app.use("/compose", composeRoutes)

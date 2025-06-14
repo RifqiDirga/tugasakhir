@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: inherit;         /* Gunakan warna dari parent, bukan biru default */
+}
+
 body{
     font-family: 'Montserrat-Black', sans-serif;
     text-align: center;

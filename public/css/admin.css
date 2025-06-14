@@ -2,6 +2,11 @@ body{
     font-family: 'Montserrat-Black', sans-serif;
     text-align: center;
 }
+a {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: inherit;         /* Gunakan warna dari parent, bukan biru default */
+}
+
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat-Black', sans-serif;
@@ -188,7 +193,7 @@ p{
 }
 
 
-.down_container .album, .down_container .galeri {
+.down_container .album a, .down_container .galeri a{
     display: flex;
     color: white;
     gap: 10px;

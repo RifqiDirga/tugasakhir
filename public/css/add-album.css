@@ -2,13 +2,10 @@ body{
     font-family: 'Montserrat-Black', sans-serif;
     text-align: center;
 }
+
 a {
   text-decoration: none; /* Hilangkan garis bawah */
   color: inherit;         /* Gunakan warna dari parent, bukan biru default */
-}
-
-a:hover {
-    color: white;
 }
 
 h1,h2,h3,h4,h5,h6{
